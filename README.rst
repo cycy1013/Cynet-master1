@@ -6,10 +6,15 @@ but now the result is confusing
 for example:in 3modeluse120models#ALL#close.csv
 
 tail content:
+
 close,714,1,0.690375,0.309625,1,ALL,-1.0
+
 close,715,1,0.676619,0.323381,1,ALL,-1.0
+
 close,716,1,0.666565,0.333435,1,ALL,-1.0
+
 close,717,0,0.6784,0.3216,1,ALL,-1.0
+
 close,718,0,0.672881,0.327119,1,ALL,-1.0
 
 in 3model_120_1_0.res content:
