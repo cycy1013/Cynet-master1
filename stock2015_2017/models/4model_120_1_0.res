@@ -1,0 +1,14 @@
+loc_id,varsrc,vartgt,num_models,auc,tpr,fpr,horizon
+./stock2015_2017/models/4model,pcfNcfTTM,volume,120,0.499998,0.333333,-1.0,1
+./stock2015_2017/models/4model,peTTM,volume,120,0.916662,0.666667,0.5,1
+./stock2015_2017/models/4model,pbMRQ,volume,120,0.25,-1.0,-1.0,1
+./stock2015_2017/models/4model,open,volume,120,0.499998,0.333333,-1.0,1
+./stock2015_2017/models/4model,psTTM,volume,120,0.499998,0.333333,-1.0,1
+./stock2015_2017/models/4model,amount,volume,120,0.833328,0.333333,0.5,1
+./stock2015_2017/models/4model,turn,volume,120,0.916662,0.666667,0.5,1
+./stock2015_2017/models/4model,low,volume,120,0.499998,0.333333,-1.0,1
+./stock2015_2017/models/4model,pctChg,volume,120,0.999995,1.0,0.0,1
+./stock2015_2017/models/4model,high,volume,120,0.749997,0.666667,-1.0,1
+./stock2015_2017/models/4model,close,volume,120,0.75,-1.0,0.5,1
+./stock2015_2017/models/4model,volume,volume,120,0.25,-1.0,-1.0,1
+./stock2015_2017/models/4model,ALL,volume,120,0.75,-1.0,0.5,1

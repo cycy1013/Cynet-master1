@@ -1,0 +1,51 @@
+#YAML Configuration
+# path to file which has the rowwise multiline time series data
+TS_PATH: './stock2015_2017/triplet/CRIME-_2015-01-01_2017-12-31.csv'
+# path to file with name of the variables
+NAME_PATH: './stock2015_2017/triplet/CRIME-_2015-01-01_2017-12-31.coords'
+# path to log file for xgenesess inference ???最后形成10log.txt,11log.txt...
+LOG_PATH: 'log.txt'
+# xgenesses run parameters (these are not hyperparameters, Beg is 0, End is whatever tempral memory is)  60=>5=>10=>60=>120  代表delay有几天
+END: 60
+BEG: 0
+# number of restarts (20 is good) ?? 并行运行的进程个数 (原来是2,改成1)
+NUM: 1
+# partition sequence?? - 0.5(we can specify different partition for each time series. XgenESeSS already has this capability) ??
+PARTITION:
+- 1.0
+# number of models to use in prediction  old:85,new:31(using cynet binary)
+#短横线 ‘-' 作为数组的开始标志 'model_nums': [31]
+model_nums:
+- 120
+# prediction horizons to test in unit of temporal quantization (using cynet binary) 由7改成1
+#决定delay的low边界
+horizons:
+- 1
+# length of run using cynet 365*4=1460(generally length of individual ts in split folder) 713
+RUNLEN: -1
+#Periods to predict for 951-713  (4年总-3年总)
+FLEX_TAIL_LEN: 5
+# path to split series
+DATA_PATH: './stock2015_2017/split/2015-01-01_2018-01-08'
+# path to models
+FILEPATH: './stock2015_2017/models/'
+# glob string that matches all the model.json files.
+MODEL_GLOB: './stock2015_2017/models/*model.json'
+# number of processors to use for post process models
+NUMPROC: 1
+# path to where result files are stored
+RESPATH: './stock2015_2017/models/*model*res'
+# path to XgenESeSS binary
+XgenESeSS: './stock2015_2017/cynet/bin/XgenESeSS'
+# do we run XgenESeSS binary locally, or do we produce a list of commands to be run via phnx ???  0,1
+RUN_LOCAL: 1
+# max distance cutoff in render network ???
+MAX_DIST: 3
+# min distance cutoff in render network??
+MIN_DIST: 0.1
+# max gamma cutoff in render network
+MAX_GAMMA: 0.95
+# min gamma cutoff in render network
+MIN_GAMMA: 0.25
+# colormap in render network
+COLORMAP: 'Reds'

@@ -1,0 +1,5 @@
+loc_id,lattgt1,lattgt2,lontgt1,lontgt2,varsrc,vartgt,num_models,auc,tpr,fpr,horizon
+./perturbed_payload2015_2017/models/0model,41.62222,41.68333,-87.74444,-87.66667,BURGLARY-THEFT-MOTOR_VEHICLE_THEFT,VAR,85,0.738674,0.4,0.53,7
+./perturbed_payload2015_2017/models/0model,41.62222,41.68333,-87.74444,-87.66667,HOMICIDE-ASSAULT-BATTERY,VAR,85,0.785675,0.488722,0.419753,7
+./perturbed_payload2015_2017/models/0model,41.62222,41.68333,-87.74444,-87.66667,VAR,VAR,85,0.816309,0.622222,0.377778,7
+./perturbed_payload2015_2017/models/0model,41.62222,41.68333,-87.74444,-87.66667,ALL,VAR,85,0.778249,0.454545,0.483146,7

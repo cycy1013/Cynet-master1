@@ -1,0 +1,27 @@
+#Heatmap configurations
+#The variable which we use as the predictor of our events.
+source: 'ALL'
+#The types of events to be predicted. Only one used here, but can be more.
+types:
+- 'close'
+#The grace we allow ourselves. One day in this case. 允许正负一天的误差(这个范围内认为预测正确)
+grace: 0
+#A setting used in the previous scripts. Used for generating our initial grid. 200
+EPS: 10
+#Boundaries of Chicago
+lat_min: 41.575
+lat_max: 42.05
+lon_min: -87.87
+lon_max: -87.5
+#The day number we are trying to predict on. 训练数据 2015-01-01-2017-12-31 1095天; 1415代表2018-11-16这一天
+day: 1415
+#Database
+predictions_csv: 'stock2015_2017/models/85modelsALL.csv'
+#Shapefiles used. For drawing Chicago boundaries. 'shapefiles/geo_export_437d164b-0f27-49ac-9a3c-587a85d9f3b1'
+shapefiles: 'shapefiles/geo_export_28b6cb27-c9ea-4664-a8ef-9cb6c0f091f1'
+#Defines numer of tiles in our heatmap. Lower means more tiles. Will need to play around with this.
+radius: 0.006
+# How detailed our heatmap is. Lower means more detailed.
+detail: 0.0007
+#Intensity threshold 0.006
+min_intensity: 0.003

@@ -1,0 +1,42 @@
+v1.0.0, Mar 4 2018 -- Initial release; DO NOT USE.
+v1.0.1-v1.0.5 -- BROKEN RELEASES; DO NOT USE.
+v1.0.6, April 11 2018 -- Stable release.
+v1.0.7 April 20, 2018 -- SpatioTemporal class updated to accept custom grid
+                            tile definitions (list of lists in the form of
+                            [coord1_start,coord1_stop,coord2_start,coord2_stop])
+                            in addition to original range + increment arguments
+v1.0.8 May 4, 2018 --  [BROKEN RELEASE; DO NOT USE]
+                          separated visualization methods out of main cynet
+                          module into viscynet and bokeh_pipe;
+                          added parameter into fit and timeseries methods
+                          to auto-calculate optimal timeseries increment
+                          given a maximum increment;
+                          updated README (now README2) to be much prettier
+                          (and proper rst)
+                          changed to require python 2.7.* because of bokeh_pipe
+                          dependency in json_to_csv() method
+v1.0.9 May 18, 2018 -- Newest stable release;
+                          v.1.0.8  DOES NOT WORK, this fixes PyPI versions
+                          errors
+v1.0.10 June 15, 2018 -- [BROKEN RELEASE; DO NOT USE]
+                          > fails because geos dependency never satisfied by auto-pip install;
+                          adds new methods setDataFrame, setVarname to uNetworkModels
+                          adds equal parameter to select method within uNetworkModels
+                          adds VARNAME parameter to splitTS within cynet
+                          adds method getGrid within cynet
+                          adds option to define grid tiles using a polygon defined by
+                          lat/lon pairs
+                          fixed bugs with auto_adjust_time parameter
+                          removes showGlobalPlot method due to Basemap break
+                          library no longer requires Basemap as a prerequisite,
+                          instead requires cartopy
+v.1.0.11 June 20, 2018 -- [INCOMPLETE RELEASE; DO NOT USE]
+                          viscynet module cartopy dependency left to user to satisfy
+                          fixes None type filter issue and cynet class bug
+v.1.0.12 June 21, 2018 -- Stable release;
+                          fixes dependencies for pandas (== 0.22.0) and haversine (>= 0.4.5)
+v.1.0.13 June 24, 2018 -- Stable release;
+                          fixes parameters of viscynet.viz method
+v.1.0.14 June 24, 2018 -- Newest stable release;
+                          General consistency updates for cynet with pipeline version
+                          (bugfixes to augmentDistance and stringify)
