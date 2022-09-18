@@ -1,6 +1,9 @@
-..use Cynet to predict stock close price
-..all in stock2015_2017 directory
-..the method is treating trade data as spacial factor
+use Cynet to predict stock close price
+
+all in stock2015_2017 directory
+
+the method is treating trade data as spacial factor
+
 but now the result is confusing
 
 for example:in 3modeluse120models#ALL#close.csv
